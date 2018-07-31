@@ -3,6 +3,9 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -35,6 +38,10 @@
   outline: none;
   background-color: transparent;
 }
+#mainNav .img-fluid {
+  display: block;
+  width: 40px;
+}
 
 @media (min-width: 992px) {
   #mainNav {
@@ -50,11 +57,11 @@
   }
   #mainNav .nav-link {
     transition: none;
-    padding: 2rem 1.5rem;
+    padding: 2rem 2.5rem;
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.85);
   }
   #mainNav .nav-link:active {
     color: white;
@@ -67,19 +74,19 @@
   }
   #mainNav.navbar-shrink .nav-link {
     color: #2C4FD8;
-    padding: 1.5rem 1.5rem 1.25rem;
+    padding: 1.5rem 2.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #B34FC5;;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #B34FC5;;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #B34FC5;;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #B34FC5;;
   }
 }
 
@@ -89,7 +96,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #2C4FD8 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(44, 77, 213, 0.9) 75%, #2C4FD8 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -97,7 +104,7 @@
 }
 
 .masthead h1 {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -134,10 +141,18 @@
   }
 }
 
+.masthead .img-fluid {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: .15rem;
@@ -145,25 +160,25 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: #b34fc5b8;
 }
 
 .btn-primary:hover {
-  background-color: #4f837f;
+  background-color: #CA4FE0;
 }
 
 .btn-primary:focus {
-  background-color: #4f837f;
+  background-color: #CA4FE0;
   color: white;
 }
 
 .btn-primary:active {
-  background-color: #467370 !important;
+  background-color: #B34FC5 !important;
 }
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #2C4FD8 0%, rgba(44, 77, 213, 0.9) 75%, rgba(44, 77, 213, 0.8) 100%);
+  background: linear-gradient(to bottom, #2C4FD8 0%, rgba(44, 77, 213, 1) 75%, rgba(44, 77, 213, 1) 100%);
 }
 
 .about-section p {
@@ -214,7 +229,7 @@
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -232,7 +247,7 @@
 
 .contact-section .card h4 {
   font-size: 0.8rem;
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
 }
@@ -266,7 +281,7 @@
 }
 
 body {
-  font-family: 'Verdana', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.0625em;
 }
 
