@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
   <head>
 
     <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>A2020 - Agencia Creativa </title>
+
+
+
+      <!-- set your website favicon -->
+    <link href="favicon.html" rel="icon"> 
+    
+    <!-- Bootstrap Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome Stylesheets -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Template Main Stylesheets -->
+    <link rel="stylesheet" href="css/contact-form.css" type="text/css"> 
+
+
+
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +47,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         
-        <img src="img/LogoOjoColor.png" class="img-fluid js-scroll-trigger" alt="">
+        <a class="js-scroll-trigger" href="#header" ><img src="img/LogoOjoColor.png" class="img-fluid js-scroll-trigger" alt=""></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -42,10 +58,13 @@
               <a class="nav-link js-scroll-trigger" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#demoreel">WORK</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects">PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#">CLIENTS</a>
+              <a class="nav-link js-scroll-trigger" href="#clients">CLIENTS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger"href="#signup">CONTACT</a>
@@ -55,16 +74,38 @@
       </div>
     </nav>
 
-    <!-- Header -->
-    <header class="masthead">
+    <!-- Header-->
+    <header id="header" class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
           <!--<h1 class="mx-auto my-0 text-uppercase">A2020</h1>-->
            <img src="img/LogoBlanco.png" class="img-fluid" alt="">
           
-          <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+          <!--<a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>-->
         </div>
       </div>
+
+
+                <div class="overlay"></div> <!--gris-->
+                 <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                   <source src="video/muraltimelapse.mp4" type="video/mp4"></video>
+                    <source src="video/muraltimelapse.webm" type="video/webm"></source>
+                 </video>
+
+
+
+
+                 <!--
+                 <div class="container h-100">
+                   <div class="d-flex text-center h-100">
+                     <div class="my-auto w-100 text-white">
+                       <h1 class="display-3">Video Header</h1>
+                       <h2>With HTML5 Video and Bootstrap 4</h2>
+                     </div>
+                   </div>
+                </div>-->
+
+
     </header>
 
     <!-- About Section -->
@@ -83,33 +124,33 @@
       </div>
     </section>
 
+
+    <!-- Demoreel Section -->
+    <section id="demoreel" class="demoreel-section bg-light">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S1Rr3vkAlpg" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
     <!-- Projects Section -->
-    <section id="projects" class="projects-section bg-light">
+
+      <section id="projects" class="projects-section bg-light">
+
       <div class="container">
 
-        <!-- Featured Project Row -->
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
-              <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-            </div>
-          </div>
-        </div>
+        
 
         <!-- Project One Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+            <img class="img-fluid" src="img/cuentas/Mix-Oxxo.png" alt="">
           </div>
           <div class="col-lg-6">
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Misty</h4>
+                  <h4 class="text-white">Oxxo</h4>
                   <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
@@ -120,24 +161,101 @@
 
         <!-- Project Two Row -->
         <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          <div class="col-lg-4">
+            <img class="img-fluid" src="img/cuentas/Carta-Blanca.png" alt="">
           </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Mountains</h4>
-                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-4">
+            <img class="img-fluid" src="img/cuentas/Carta-Blanca.png" alt="">
           </div>
+          <div class="col-lg-4">
+            <img class="img-fluid" src="img/cuentas/Carta-Blanca.png" alt="">
+          </div>
+          
         </div>
 
       </div>
     </section>
+
+    <!-- Clients Section -->
+    
+      
+
+            <!--
+                     <div id="fullScreenDiv">
+                <img src="https://www.imi21.com/wp-content/uploads/2016/11/t12.jpg" id="videosubstitute" alt="Full screen background video">
+                <div id="videoDiv">           
+                    <video preload="preload" id="video" autoplay="autoplay" loop="loop">
+                    <source src="video/muraltimelapse.webm" type="video/webm"></source>
+                    <source src="video/muraltimelapse.mp4" type="video/mp4"></source>
+                    </video> 
+                </div>
+                <div id="messageBox"> 
+                    <div>
+                        <h1>A2020</h1>
+                         <h2>Would you like this on your site?</h2>
+                        <h3><a href="#main" class="scrolly">Mural</a></h3>
+                    </div>
+                </div>   
+            </div>
+            
+                     
+   <div id="map" style="width:100%;height:400px;"></div>
+
+
+
+
+   <script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+-->
+<section id="clients" class="clients-section bg-light" >
+  <div class="container">
+    <div class="row justify-content-center contentclients">
+       <div class="col-lg-4">
+            <img class="img-fluid clientsimg" src="img/clientes/bmw-2c.png" alt="">
+          </div>
+          <div class="col-lg-4">
+            <img class="img-fluid clientsimg" src="img/clientes/berel-1c.png" alt="">
+          </div>
+          <div class="col-lg-4">
+            <img class="img-fluid clientsimg" src="img/clientes/oscar-mayer-c.png" alt="">
+          </div>
+         
+
+          <div class="col-lg-4">
+            <img class="img-fluid clientsimg" src="img/clientes/aba-1c.png" alt="">
+          </div>
+          <div class="col-lg-4">
+            <img class="img-fluid clientsimg" src="img/clientes/norteñita-1c.png" alt="">
+          </div>
+          <div class="col-lg-4">
+            <img class="img-fluid clientsimg" src="img/clientes/oxxo-1c.png" alt="">
+          </div>
+
+           <div class="col-lg-4">
+            <img class="img-fluid clientsimg" src="img/clientes/aba-1c.png" alt="">
+          </div>
+          <div class="col-lg-4">
+            <img class="img-fluid clientsimg" src="img/clientes/norteñita-1c.png" alt="">
+          </div>
+          <div class="col-lg-4">
+            <img class="img-fluid clientsimg" src="img/clientes/oxxo-1c.png" alt="">
+          </div>
+          
+        </div>
+    </div>
+</section>
+
+
+
 
     <!-- Signup Section -->
     <section id="signup" class="signup-section">
@@ -147,11 +265,116 @@
 
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
             <h2 class="text-white mb-5">¿QUIERES PLATICAR UN POCO MÁS?</h2>
-
+            
+            <!--
             <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Escribe tu correo...">
+              
+              <input type="message" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Mensaje">
+              <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
             </form>
+            
+            <form action="mail.php" method="post" >
+              Correo <input type="email" name="email"/><br>
+              Comentario: <br>
+              <textarea name="com"></textarea><br>
+              <input type="submit" name="enviar" value="Enviar Comentario">
+            </form>
+
+            <form name="frmContacto" method="post" action="mail.php">
+              <table width="500px">
+              <tr>
+              <td>
+              <label for="first_name">Nombre: *</label>
+              </td>
+              <td>
+              <input type="text" name="first_name" maxlength="50" size="25">
+              </td>
+              </tr>
+              <tr>
+              <td valign="top"">
+              <label for="last_name">Apellido: *</label>
+              </td>
+              <td>
+              <input type="text" name="last_name" maxlength="50" size="25">
+              </td>
+              </tr>
+              <tr>
+              <td>
+              <label for="email">Dirección de E-mail: *</label>
+              </td>
+              <td>
+              <input type="text" name="email" maxlength="80" size="35">
+              </td>
+              </tr>
+              <tr>
+              <td>
+              <label for="telephone">Número de teléfono:</label>
+              </td>
+              <td>
+              <input type="text" name="telephone" maxlength="25" size="15">
+              </td>
+              </tr>
+              <tr>
+              <td>
+              <label for="comments">Comentarios: *</label>
+              </td>
+              <td>
+              <textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+              </td>
+              </tr>
+              <tr>
+              <td colspan="2" style="text-align:right">
+              <input type="submit" value="Enviar">
+              </td>
+              </tr>
+              </table>
+            </form>
+            -->
+            <form id="contactForm" name="contactform" data-toggle="validator" class="popup-form">
+                        <div class="row">
+                          <div id="msgContactSubmit" class="hidden"></div>
+                          
+                          <div class="form-group col-sm-6">
+                            <div class="help-block with-errors"></div>
+                            <input name="fname" id="fname" placeholder="nombre*" class="form-control" type="text" required data-error="Por favor ingresa tu nombre"> 
+                            <div class="input-group-icon"><i class="fa fa-user"></i></div>
+                          </div><!-- end form-group -->
+                          <div class="form-group col-sm-6">
+                            <div class="help-block with-errors"></div>
+                            <input name="email" id="email" placeholder="E-mail*" pattern=".*@\w{2,}\.\w{2,}" class="form-control" type="email" required data-error="Por favor ingresa un correo electrónico válido">
+                            <div class="input-group-icon"><i class="fa fa-envelope"></i></div>
+                          </div><!-- end form-group -->
+                          <div class="form-group col-sm-6">
+                            <div class="help-block with-errors"></div>
+                            <input name="phone" id="phone" placeholder="Teléfono" class="form-control" type="text" >
+                            <div class="input-group-icon"><i class="fa fa-phone"></i></div> 
+                          </div><!-- end form-group -->
+
+                          
+
+
+                          <div class="form-group col-sm-6">
+                            <div class="help-block with-errors"></div>
+                            <input name="subject" id="subject" placeholder="Asunto*" class="form-control" type="text" required data-error="Por favor ingresa el asunto">
+                            <div class="input-group-icon"><i class="fa fa-book"></i></div> 
+                          </div><!-- end form-group -->
+
+
+                          <div class="form-group col-sm-12">
+                            <div class="help-block with-errors"></div>
+                            <textarea rows="3" name="message" id="message" placeholder="Escribe tu comentario aquí*" class="form-control" required data-error="Por favor ingresa un mensaje"></textarea>
+                            <div class="textarea input-group-icon"><i class="fa fa-pencil"></i></div>
+                          </div><!-- end form-group -->
+                          
+                          <div class="form-group last col-sm-12">
+                            <button type="submit" id="submit" class="btn btn-custom"><i class='fa fa-envelope'></i> Enviar</button>
+                          </div><!-- end form-group --> 
+                      
+                          
+                          <div class="clearfix"></div>
+                        </div><!-- end row -->
+                      </form><!-- end form -->
 
           </div>
         </div>
@@ -160,6 +383,11 @@
 
     <!-- Contact Section -->
     <section class="contact-section bg-black">
+     
+
+
+
+
       <div class="container">
 
         <div class="row">
@@ -170,7 +398,9 @@
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Address</h4>
                 <hr class="my-4">
-                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                <div class="small text-black-50">Torre Martel 2, Planta Baja
+Humberto Junco Voigt #2307
+Valle Oriente, San Pedro Garza García, N.L.</div>
               </div>
             </div>
           </div>
@@ -182,7 +412,7 @@
                 <h4 class="text-uppercase m-0">Email</h4>
                 <hr class="my-4">
                 <div class="small text-black-50">
-                  <a href="#">hello@yourdomain.com</a>
+                  <a href="#">hola@a2020.mx</a>
                 </div>
               </div>
             </div>
@@ -201,24 +431,29 @@
         </div>
 
         <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-twitter"></i>
+          <a href="https://www.instagram.com/a2020mx/" class="mx-2">
+            <i class="fab fa-instagram"></i>
           </a>
-          <a href="#" class="mx-2">
+          <a href="https://www.facebook.com/aveinteveintemx" class="mx-2">
             <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-github"></i>
           </a>
         </div>
 
       </div>
     </section>
 
+    <!-- Maps Section -->
+      <section class="maps-section" >
+  
+
+    <div class="overlayss"></div>
+    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.79108176389875!2d-100.32596020818733!3d25.649496831880207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be407ab05bff%3A0x5f2665360dff21c5!2sTorres+Martel!5e0!3m2!1ses!2smx!4v1535391641029" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>  
+  </section>
+
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
       <div class="container">
-        Copyright &copy; Your Website 2018
+        Copyright &copy; A2020 2018
       </div>
     </footer>
 
@@ -231,6 +466,39 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+
+       <!-- jQuery Library -->
+    <script src="js/jquery-3.2.1.min.js"></script>  
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Form Validator -->
+    <script src="js/validator.min.js"></script>
+    <!-- Contact Form Js -->
+    <script src="js/contact-form.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- --------------------------------------------------  -->
+
+
+
+
+
+
+
+
+
+
 
   </body>
 

@@ -14,8 +14,8 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #2C4FD8;
+  border: 1px solid #2C4FD8;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -41,6 +41,7 @@
 #mainNav .img-fluid {
   display: block;
   width: 40px;
+  z-index: 1;
 }
 
 @media (min-width: 992px) {
@@ -51,6 +52,7 @@
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
+
   #mainNav .navbar-brand {
     padding: .5rem 0;
     color: rgba(255, 255, 255, 0.5);
@@ -69,6 +71,23 @@
   #mainNav.navbar-shrink {
     background-color: #fff;
   }
+
+
+
+  #mainNav.navbar-shrink img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    background-color: transparent;
+   
+  }
+
+  #mainNav img{
+    -webkit-filter: brightness(500%);
+    filter: brightness(500%);
+    
+  
+  }
+
   #mainNav.navbar-shrink .navbar-brand {
     color: #2C4FD8;
   }
@@ -101,6 +120,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  z-index: -3;
 }
 
 .masthead h1 {
@@ -147,6 +167,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  z-index: 1;
 }
 
 .btn {
@@ -196,7 +217,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #2C4FD8;
   }
 }
 
@@ -210,7 +231,7 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #2C4FD8;
     border-width: .25rem;
     width: 30%;
   }
@@ -218,11 +239,12 @@
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #2C4FD8 100%), url("../img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #2C4FD8 100%), url("../img/vallemorado.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+
 }
 
 .signup-section .form-inline input {
@@ -242,7 +264,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #2C4FD8;
 }
 
 .contact-section .card h4 {
@@ -253,13 +275,14 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #2C4FD8;
   border-width: 0.25rem;
   width: 3rem;
 }
 
 .contact-section .social {
   margin-top: 5rem;
+  padding-bottom: 80px;
 }
 
 .contact-section .social a {
@@ -286,7 +309,7 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: #2C4FD8;
 }
 
 a:focus, a:hover {
@@ -299,13 +322,157 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: #2C4FD8 !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: #2C4FD8 !important;
 }
 
 footer {
   padding: 5rem 0;
 }
+
+/*------------------- mi cagadero--------------------*/
+
+/* Default to hide the video on all devices */
+#video{display:none}
+
+/* Default to display the image on all devices */
+#videosubstitute{display:block;width:auto;height:100%;}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#fullScreenDiv{
+    width:100%;
+    min-height: 100%; 
+   /* Set the height to match that of the viewport. */
+    height: 100vh;
+    width: auto;
+    padding:0!important;
+    margin: 0!important;
+    background-color: gray;
+    position: relative;
+}
+#video{    
+    width: 100vw; 
+    height: auto;
+    object-fit: cover;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #video{
+    height: 150%;
+    top: -100%;
+  }
+  #videosubstitute{
+    display:block;
+    width: 100%;
+    height: auto;}
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #video {
+    width: 150%;
+    left: -100%;
+  }
+  #videosubstitute{display:block;width:auto;height:100%;}
+}
+/*if there is 992  pixels or more, then display the video but hide the image*/
+@media only screen and (min-width : 992px) {
+#video{display:block;}
+#videosubstitute{display:none}
+}   
+
+/* The container for our text and stuff */
+#messageBox{
+    position: absolute;  top: 0;  left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+}
+
+
+
+
+
+
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -2;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+/*
+header .container {
+  position: relative;
+  z-index: 2;
+}
+*/
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.9) 0%, rgba(44, 77, 213, 0.9) 75%, #2C4FD8 100%);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+
+
+.clientsimg{
+max-width: 30%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.contentclients{
+padding-top: 50px;
+padding-bottom: 50px;
+text-align: center;
+
+
+}
+
+
+
+
